@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 compiled.php
 config.php
 down
@@ -7,3 +8,14 @@ routes.php
 routes.scanned.php
 schedule-*
 services.json
+||||||| merged common ancestors
+=======
+config.php
+routes.php
+schedule-*
+compiled.php
+services.json
+events.scanned.php
+routes.scanned.php
+down
+>>>>>>> afa27ab7919464c3e2153621d3c0ba0baf71abd0
