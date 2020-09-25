@@ -1,0 +1,83 @@
+.cursivefont {
+    font-family: cursive;
+}
+.btn2 {
+    background-color: #000000;
+    /* color: #FFB20F !important;  */
+    font-weight: 500 !important;
+}
+
+.nav-link {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.mainOverlay {
+background-color: #d7d7d7;
+height: auto;
+}
+
+.mainOverlay2 {
+    background-color: #FFB20F;
+    height: 100vh;
+    }
+
+.mainOverlay3 {
+    background-color: #FFB20F;
+    height: 100vh;
+        }
+
+.thanks {
+    font-size: 3rem;
+}
+
+.navbar {
+    background-color: #d7d7d7;
+    color: #eff20f;
+}
+
+.nb1 {
+    box-shadow: 0 0 0 3px #999999;
+}
+.nb2 {
+    background-color: #FFB20F;
+    box-shadow: 0 0 0 3px #999999;
+}
+
+.nb3 {
+    background-color: #FFB20F;
+}
+
+.nav-item {
+    color: #000000;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+/* About page */
+
+.aboutbackground {
+    background-color: #0E1E25;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    /* left: 41%; */
+    top: 40%;
+
+}
+
+.card-link {
+    color: darkturquoise;
+    font-weight: bold;
+}
+
+.card-body {
+    background: gold;
+}
