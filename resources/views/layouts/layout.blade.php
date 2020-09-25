@@ -15,10 +15,12 @@
 </head>
 
 <body>
-    <div class="container">
+   
         @yield('content')
-    </div>
-
+   
+    <footer class="container">
+      <p>&copy; Company 2017</p>
+    </footer>
     <script src="{{URL::asset('js/bootstrap.bundle.min.js')}}"></script>
 </body>
 

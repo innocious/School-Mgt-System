@@ -1,0 +1,80 @@
+body{
+    /* background: linear-gradient(rgba(14, 13, 13, 0.924), rgba(93, 93, 94, 0.822), rgba(3, 3, 3, 0.664)); */
+    background-image: linear-gradient(rgba(14, 13, 13, 0.89),rgba(14, 13, 13, 0.924)), url(/img/resonate-wallpaper-1280x1024.jpg);
+    color: rgb(6, 241, 241);
+    border: 1px solid rgb(147, 147, 192);
+    box-shadow: 0px 0px 10px 0px rgb(54, 53, 53);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+.row{
+  margin: 0px;
+  padding: 0px;
+}
+
+.myModal{
+    background: linear-gradient(rgba(14, 13, 13, 0.924), rgba(93, 93, 94, 0.822), rgba(3, 3, 3, 0.664));
+}
+
+.navbar {
+    margin-bottom: 20px;
+    background-color: rgb(138, 135, 135) !important;
+  }
+
+.nav-item{
+    color: blueviolet !important;
+}  
+
+.lnk{
+    color: rgb(6, 241, 241) !important;
+}
+  
+
+.mybtn{
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgb(54, 53, 53);
+  background-color: blue;
+  background: linear-gradient(rgba(131, 130, 130, 0.712), rgba(48, 48, 49, 0.822), rgba(42, 42, 43, 0.712));
+}
+
+.mybtnform{
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgb(54, 53, 53);
+    background-color: blue;
+    background: linear-gradient(rgba(131, 130, 130, 0.712), rgba(48, 48, 49, 0.822), rgba(42, 42, 43, 0.712));
+   
+}
+.tcol{
+    box-shadow: 0px 0px 10px 0px rgb(54, 53, 53);
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+
+
+.mytable{
+    height: 330px;
+    overflow-y: hidden;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.self-container{
+    background: linear-gradient(rgba(14, 13, 13, 0.924), rgba(93, 93, 94, 0.822), rgba(3, 3, 3, 0.664));
+    box-shadow: 0px 4px 10px 0px rgb(31, 30, 30);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.self-contain{
+    box-shadow: 0px 4px 10px 0px rgb(54, 53, 53);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgb(180, 175, 175);
+}
