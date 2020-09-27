@@ -1,7 +1,8 @@
 body{
     /* background: linear-gradient(rgba(14, 13, 13, 0.924), rgba(93, 93, 94, 0.822), rgba(3, 3, 3, 0.664)); */
     background-image: linear-gradient(rgba(14, 13, 13, 0.89),rgba(14, 13, 13, 0.924)), url(/img/resonate-wallpaper-1280x1024.jpg);
-    color: rgb(6, 241, 241);
+   /* color: rgb(6, 241, 241); */
+   color: rgb(223, 219, 219);
     border: 1px solid rgb(147, 147, 192);
     box-shadow: 0px 0px 10px 0px rgb(54, 53, 53);
     background-size: cover;
@@ -16,7 +17,8 @@ body{
 }
 
 .myModal{
-    background: linear-gradient(rgba(14, 13, 13, 0.924), rgba(93, 93, 94, 0.822), rgba(3, 3, 3, 0.664));
+    /* background: linear-gradient(rgba(14, 13, 13, 0.924), rgba(93, 93, 94, 0.822), rgba(3, 3, 3, 0.664)); */
+    color: black;
 }
 
 .navbar {
@@ -29,7 +31,15 @@ body{
 }  
 
 .lnk{
-    color: rgb(6, 241, 241) !important;
+    color:whitesmoke !important;
+}
+
+.lnk:active{
+    color: blue!important;
+}
+
+.header{
+    color: rgb(14, 191, 235);
 }
   
 
@@ -78,3 +88,4 @@ body{
     text-align: center;
     background-color: rgb(180, 175, 175);
 }
+

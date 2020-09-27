@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SchoolManagmentController;
+use App\Http\Controllers\studentcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,12 +16,14 @@ use App\Http\Controllers\SchoolManagmentController;
 */
 
 
-Route::get('/',[SchoolManagmentController::class,'index'])->name('SchoolManagment');
-
-
-// Route::post('/create','TodoController@create')->name('todo');
-// Route::delete('/delete/{id}','TodoController@delete')->name('delete');
-// Route::put('/edit/{id}','TodoController@edit')->name('edit');
+Route::get('/',[studentcontroller::class,'index'])->name('home')->middleware('first_name');//hompage
+Route::get('/admin',[studentcontroller::class,'admin'])->name('admin');
+Route::get('/studentLogin',[studentcontroller::class,'studentLogin'])->name('studentLogin');
+Route::get('/teacherLogin',[studentcontroller::class,'teacherLogin'])->name('teacherLogin');
+Route::get('/studentpage',[studentcontroller::class,'studentpage'])->name('studentpage');
+Route::post('/create',[studentcontroller::class,'create'])->name('student');
+Route::delete('/delete/{id}',[studentcontroller::class ,'delete'])->name('delete');
+Route::put('/edit/{id}',[studentcontroller::class, 'editstudent'])->name('edit');
 
 
 

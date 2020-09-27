@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('section')
+@section('content')
 
 <div class="row">
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
