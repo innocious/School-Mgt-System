@@ -10,20 +10,20 @@
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link lnk" href="index.html#">Centered nav only <span class="sr-only">(current)</span></a>
+              <a class="nav-link lnk" href="index.html#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link lnk" href="index.html#">Link</a>
+              <a class="nav-link lnk" href="index.html#">Library</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link lnk" href="index.html#">Disabled</a>
+              <a class="nav-link lnk" href="index.html#">e-Portals</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Info</a>
               <div class="dropdown-menu" aria-labelledby="dropdown10">
-                <a class="dropdown-item" href="index.html#">Action</a>
-                <a class="dropdown-item" href="index.html#">Another action</a>
-                <a class="dropdown-item" href="index.html#">Something else here</a>
+                <a class="dropdown-item" href="index.html#">Registration</a>
+                <a class="dropdown-item" href="index.html#">News</a>
+                <a class="dropdown-item" href="index.html#">Population</a>
               </div>
             </li>
           </ul>
@@ -36,9 +36,9 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
         <div class="container">
-          <h1 class="display-3">AkwaIbom State University</h1><hr>  
+          <h1 class="display-3">Oxford University</h1><hr>  
           <h3>School Managment</h3>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+          <p>This is a template for a school website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
           <p><a class="btn btn-primary btn-lg" href="index.html#" role="button">Learn more &raquo;</a></p>
         </div>
       </div>
@@ -231,7 +231,7 @@
             <h2>STUDENT</h2><hr>
             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             <div class="col-md-12 self-contain">
-            <p><button type="button" class="btn btn-success  mybtn" data-toggle="modal" data-target="#myModal1">Login as Student</button></p>
+            <p><button type="button" class="btn btn-primary  mybtn" data-toggle="modal" data-target="#myModal1">Login as Student</button></p>
             </div>
             </div>
           </div>

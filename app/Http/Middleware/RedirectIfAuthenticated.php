@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 
 namespace App\Http\Middleware;
@@ -30,8 +29,7 @@ class RedirectIfAuthenticated
         return $next($request);
     }
 }
-||||||| merged common ancestors
-=======
+||||||| merged common ancestor
 <?php
 
 namespace App\Http\Middleware;
@@ -57,6 +55,4 @@ class RedirectIfAuthenticated
         }
 
         return $next($request);
-    }
-}
->>>>>>> afa27ab7919464c3e2153621d3c0ba0baf71abd0
+

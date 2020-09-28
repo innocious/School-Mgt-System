@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-6 tcol">
 
-            <form method="post" action="{{ route('todo') }}">
+            <form method="get" action="{{ route('todo') }}">
                 @csrf
                <br>
                 <div class="form-group">

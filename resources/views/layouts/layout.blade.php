@@ -19,7 +19,7 @@
         @yield('content')
    
     <footer class="container">
-      <p>&copy; Company 2017</p>
+      <p>&copy; Company 2020</p>
     </footer>
     <script src="{{URL::asset('js/bootstrap.bundle.min.js')}}"></script>
 </body>
