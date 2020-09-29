@@ -1,0 +1,95 @@
+
+.container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.row{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.cont{
+    text-align: center !important;
+    align-content: center !important;
+    align-self: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+} 
+.image{
+    background-image:linear-gradient(to bottom, rgba(158, 157, 157, 0.5),rgba(9, 3, 61, 0.9)),url(../img/grad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* height: 40rem; */
+}
+.navbar-brand{
+    position: absolute;
+    margin-top: 1rem;
+    background-image: url(../img/images.png);
+    font-size: 2rem !important ;
+    font-family: Edwardian Script ITC !important;
+    font-weight: bold !important;
+    color: white;
+    width:5rem;
+    height:5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+
+    /* color: rgb(204, 238, 111) !important; */
+}
+#menu{
+    color: white !important;
+}
+.good{
+    margin-top: 2rem !important;
+    font-size: 3.9em !important;
+    font-weight: normal !important;
+    font-family: elephant;
+    color: white;
+    /* color: rgb(224, 250, 153); */
+}
+.small{
+    margin-top: 2rem !important;
+    font-size: 1.5rem !important;
+    color: #fff;
+    /* color: rgb(224, 250, 153); */
+
+}
+.watch{
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+
+
+}
+.button0{
+    background-color:  rgb(4, 22, 78) !important;
+    box-shadow: 5px 5px 7px rgba(8, 30, 95, 0.9);
+    border: none !important;
+    font-size: 1rem;
+    color: white;
+    padding: 10px 16px  !important;
+    transition: all .6s;
+
+}
+.button0:hover{
+    background-color:rgb(19, 68, 218)  !important;
+    color: white;
+    text-decoration: none;
+    border-left: 5px solid rgb(23, 3, 70);
+    font-size: 1rem !important;
+    transform: translateY(-1px)  !important;
+}
+/* end of section one */
+.cards{
+    background-color: rgb(230, 223, 205);
+}
+.card{
+    border: none !important;
+    background-color: transparent !important;
+}
+.card-body{
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
