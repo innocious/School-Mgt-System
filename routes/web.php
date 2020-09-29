@@ -16,7 +16,7 @@ use App\Http\Controllers\studentcontroller;
 */
 
 
-Route::get('/',[studentcontroller::class,'index'])->name('home')->middleware('first_name');//hompage
+Route::get('/',[studentcontroller::class,'index'])->name('home');//->middleware('first_name');//hompage
 Route::get('/admin',[studentcontroller::class,'admin'])->name('admin');
 Route::get('/studentLogin',[studentcontroller::class,'studentLogin'])->name('studentLogin');
 Route::get('/teacherLogin',[studentcontroller::class,'teacherLogin'])->name('teacherLogin');
