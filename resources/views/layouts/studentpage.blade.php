@@ -9,18 +9,16 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
-    <link href="/mycss/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="/mycss/studentpage.css" rel="stylesheet">
     
     <!-- Latest compiled and minified CSS -->
 </head>
 
 <body>
-    <div class="container">
-        @yield('content')
+    <div class="container-fluid">
+    @yield('content')
     </div>
-
+       
     <script src="{{URL::asset('js/bootstrap.bundle.min.js')}}"></script>
 </body>
 

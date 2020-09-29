@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SchoolManagmentController;
+use App\Http\Controllers\studentcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,26 +16,30 @@ use App\Http\Controllers\SchoolManagmentController;
 */
 
 
-Route::get('/',[SchoolManagmentController::class,'index'])->name('SchoolManagment');
+Route::get('/','studentcontroller@index')->name('home')->middleware('first_name');//hompage
+Route::get('/admin','studentcontroller@admin')->name('admin');
+Route::get('/studentLogin','studentcontroller@studentLogin')->name('studentLogin');
+Route::get('/teacherLogin','studentcontroller@teacherLogin')->name('teacherLogin');
+Route::get('/studentpage','studentcontroller@studentpage')->name('studentpage');
+Route::post('/create','studentcontroller@create')->name('student');
+Route::delete('/delete/{id}','studentcontroller@delete')->name('delete');
+Route::put('/edit/{id}','studentcontroller@editstudent')->name('edit');
 
 
-Route::post('/create','TodoController@create')->name('todo');
-Route::delete('/delete/{id}','TodoController@delete')->name('delete');
-Route::put('/edit/{id}','TodoController@edit')->name('edit');
 
 
 
 
-Route::group(['middleware' => 'isAdmin'], function(){
-    Route::get('/admin', 'AdminController@index');
-    Route::group(['middleware' => User], function(){
-        
-    });
-});
-Route::get('/users', 'UserController@index');
-        Route::get('/user/add', 'UserController@getAdd');
-        Route::post('/user/add', 'UserController@postAdd');
-        Route::get('/user/edit/{id}', 'UserController@getEdit');
-        Route::post('/user/edit/{id}', 'UserController@postEdit');
-        Route::get('/user/delete/{id}', 'UserController@delete');
+
+
+
+
+
+
+
+
+
+
+
+
 
