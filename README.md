@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+=======
+<<<<<<< HEAD
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+>>>>>>> bf00c06e2a7178d720efe804410a8d9e649df496
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -31,6 +36,11 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
+<<<<<<< HEAD
+=======
+### Premium Partners
+
+>>>>>>> bf00c06e2a7178d720efe804410a8d9e649df496
 - **[Vehikl](https://vehikl.com/)**
 - **[Tighten Co.](https://tighten.co)**
 - **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
@@ -40,6 +50,7 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[Many](https://www.many.co.uk)**
 - **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
 - **[DevSquad](https://devsquad.com)**
+<<<<<<< HEAD
 - [UserInsights](https://userinsights.com)
 - [Fragrantica](https://www.fragrantica.com)
 - [SOFTonSOFA](https://softonsofa.com/)
@@ -61,6 +72,9 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - [Appoly](https://www.appoly.co.uk)
 - [OP.GG](https://op.gg)
 - [云软科技](http://www.yunruan.ltd/)
+=======
+- **[OP.GG](https://op.gg)**
+>>>>>>> bf00c06e2a7178d720efe804410a8d9e649df496
 
 ## Contributing
 
@@ -77,3 +91,11 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<<<<<<< HEAD
+=======
+||||||| merged common ancestors
+=======
+# School-Mgt-System
+A school management app, built by Gamma team, SIH using Laravel 8
+>>>>>>> 110413121c0b00b75c5175ba6f03fa80c1953a31
+>>>>>>> bf00c06e2a7178d720efe804410a8d9e649df496
