@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link lnk" href="{{ route('home') }}">Log Out<span class="sr-only">(current)</span></a>
+              <a class="nav-link lnk" href="{{ route('index')}}">Log Out<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link lnk" href="index.html#">Link</a>
@@ -26,20 +26,15 @@
       </nav>
     </div>
 
-    <form action="{{ route('home') }}">
-      <input type="submit" value="back">
-    </form>
-
+   
     <div class="container-fluid">
       <div class="row">
         <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link active" href="{{ route('home') }}">Log out<span class="sr-only">(current)</span></a>
+              <a class="nav-link active" href="{{ route('index') }}">Log out<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ route('studentpage') }}">Vacancy</a>
-            </li>
+          
             <li class="nav-item">
               <a class="nav-link" href="index.html#">Seachers Forum</a>
             </li>

@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link lnk" href="index.html#">Centered nav only <span class="sr-only">(current)</span></a>
+              <a class="nav-link lnk" href="{{ route('index') }}">Log out <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link lnk" href="index.html#">Link</a>
@@ -32,96 +32,49 @@
       </nav>
     </div>
 
-    <form action="{{ route('home') }}">
-      <input type="submit" value="back">
-    </form>
-
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="{{ route('home') }}">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ route('studentpage') }}">Student Registration</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#">Teachers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#">News Updates</a>
-            </li>
-          </ul>
-
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#">Timetable Updates</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#">Library</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#">School fees</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#">Exams</a>
-            </li>
-          </ul>
-
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#">Hospital</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#">Notce</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#">Account</a>
-            </li>
-          </ul>
-        </nav>
-
-        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+    
+   <div class="container">
+        <main role="main" class="col-sm-12 ml-sm-auto col-md-12 pt-3">
           <h1 class="headerAdmin">Admin</h1>
 
-          <div class="col-sm-12 blog-main">
+  <div class="col-sm-12 blog-main">
+<div class="row">
+<div class="col-md-6 blog-post">
+<h2 class="headerAdmin">Registreations</h2>
+<form action="{{ route('register') }}" method="post">
+  @csrf
+ <div class="form-group">
+  <label class="tcolor" for="Name">User Name</label>
+  <input class="form-control" type="text" name="name" required>
+ </div>
+    <br>
+ <div class="form-group">
+  <label class="tcolor" for="Email">Email</label>
+  <input class="form-control" type="text" name="email" required>
+ </div>
+    <br>  
+ <div class="form-group">
+   <label class="tcolor" for="password">Password</label>
+   <input class="form-control" type="text" name="password" required>
+ </div>
+ <br>
+ <div class="form-group">
+   <label class="tcolor" for="password">Role</label>
+   <input class="form-control" type="text" name="role" required>
+ </div>
+    <br>   
+ <div class="form-group">
+   <input class="btn btn-primary btn-block mybtn" type="submit" value="Submit">
+ </div>
+   
+ </form>
 
-<div class="col-md-12 blog-post">
-  <h2 class="blog-post-title headerAdmin">Sample blog post</h2>
-  <p class="blog-post-meta">January 1, 2014 by <a href="index.html#">Mark</a></p>
 
-  <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-  <hr>
-  <p>Cum sociis natoque penatibus et magnis <a href="index.html#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-  <blockquote>
-    <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-  </blockquote>
-  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-  <h2  class="headerAdmin">Heading</h2>
-  <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-  <h3  class="headerAdmin">Sub-heading</h3>
-  <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-  <pre><code>Example code block</code></pre>
-  <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-  <h3  class="headerAdmin">Sub-heading</h3>
-  <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-  <ul>
-    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-    <li>Donec id elit non mi porta gravida at eget metus.</li>
-    <li>Nulla vitae elit libero, a pharetra augue.</li>
-  </ul>
-  <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-  <ol>
-    <li>Vestibulum id ligula porta felis euismod semper.</li>
-    <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-    <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-  </ol>
-  <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+ 
 </div><!-- /.blog-post -->
 
           </section>
-
+ <div class="col-md-6">
           <h2 class="headerAdmin">School Timetable</h2>
           <div class="table-responsive">
             <table class="table table-striped">
@@ -205,53 +158,16 @@
                   <td>porta</td>
                   <td>Mauris</td>
                 </tr>
-                <tr>
-                  <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
+               
+                
+               
               </tbody>
             </table>
           </div>
         </main>
       </div>
     </div>
-
+    </div>
+    </div>
+    </div>
    @endsection

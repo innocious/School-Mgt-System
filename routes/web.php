@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\StudentManController;
+use App\Http\Controllers\studentcontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,14 +13,13 @@ use App\Http\Controllers\StudentManController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get ( '/',[studentcontroller::class,'index'])->name('index');
+Route::post ( '/register', [studentcontroller::class,'register'])->name('register');
+Route::get ( '/authenticate',[studentcontroller::class,'authenticate'] )->name('authenticate');
+Route::get ( '/logout',[studentcontroller::class,'logout'])->name('logout');
+Route::get ( '/ChangePassword',[studentcontroller::class,'ChangePassword'])->name('ChangePassword');
+Route::get ( '/updatePasswordpage',[studentcontroller::class,'updatePasswordpage'])->name('updatePasswordpage');
+Route::get ( '/teacherRegistration',[studentcontroller::class,'teacherRegistration'])->name('teacherRegistration');
+Route::get ( '/studentRegistration',[studentcontroller::class,'studentRegistration'])->name('studentRegistration');
 
-
-Route::get('/',[StudentManController::class,'index'])->name('schoolMan');
-
-// Route::get('/registration', function(){
-//     dd('bingo');
-// });
 

@@ -89,26 +89,25 @@
 
                     <div class="modal-body myModal tcolor">
                                         <!--Modal content-->
-                        <form action="" method="POST">          
+                        <form action="{{ route('authenticate') }}" method="POST">     
+                        {{ csrf_field() }}
+                        {{ method_field('GET') }}
+     
                             <div class="form-group">
-                                <label for="exampleInputName1">Name</label>
-                                <input type="text" class="form-control" name="name" placeholder="Enter Name" required value="">
-                                <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">We'll never share your todo name with anyone else.</small>
-                            </div>
-                            <br>
-
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email</label>
+                                <label for="exampleInputName1">Email</label>
                                 <input type="text" class="form-control" name="email" placeholder="Enter Name" required value="">
                                 <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">We'll never share your todo name with anyone else.</small>
                             </div>
                             <br>
 
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Description</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1" name="description" placeholder="Description" required value="">
+                                <label for="exampleInputEmail1">Password</label>
+                                <input type="text" class="form-control" name="password" placeholder="Enter Name" required value="">
+                                <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">We'll never share your todo name with anyone else.</small>
                             </div>
-                            <br><br>  
+                            <br>
+
+            
 
                             <button type="submit" id="editbtn" class="btn btn-primary btn-sm">Submit</button>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal" style="display:flex; float:right">Close</button>
