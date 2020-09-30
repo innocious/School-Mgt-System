@@ -14,12 +14,7 @@
             <li class="nav-item active">
               <a class="nav-link lnk" href="{{ route('index') }}">Log Out<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link lnk" href="index.html#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link lnk" href="index.html#">Disabled</a>
-            </li>
+            
            
           </ul>
         </div>

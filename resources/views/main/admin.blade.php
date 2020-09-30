@@ -1,173 +1,341 @@
 @extends('layouts.admindashboard')
 
 @section('content')
+ 
 
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+ <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html#">Dashboard</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link lnk" href="{{ route('index') }}">Log out <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link lnk" href="index.html#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link lnk" href="index.html#">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown10">
-                <a class="dropdown-item" href="index.html#">Action</a>
-                <a class="dropdown-item" href="index.html#">Another action</a>
-                <a class="dropdown-item" href="index.html#">Something else here</a>
-              </div>
+              <a class="nav-link" href="{{ route('index') }}">Log out<span class="sr-only">(current)</span></a>
             </li>
           </ul>
+          
         </div>
-      </nav>
-    </div>
+      </nav> 
+
+   
+      <div class="container-fluid">
+      <div class="row">
+        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+          <ul class="nav nav-pills flex-column">
+            <li>
+              <div class="col-md-12" style=" text-align: center">
+            <h1 class="font"><span class="fa fa-user-circle" ><h1> Admin </h1></span>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active link" href="index.html#">
+             <div class="col-md-12" style="text-align:center">
+             <span class="fa fa-handshake-o"> Welcome</span>
+             </div>
+                 
+              
+            <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <button type="button" href="#"  class="mybtn btn-lg btn-danger" data-toggle="modal" data-target="#myModal2">New Admin... <span class="fa fa-gears" style="display:flex;float:right"></span></button>
+            </li>
+            <li class="nav-item">
+            <button type="button" href="#"  class="mybtn btn-lg btn-success" data-toggle="modal" data-target="#myModal2">New Student <span class="fa fa-user-plus" style="display:flex;float:right"></span></button>
+            </li>
+            <li class="nav-item">
+            <button type="button" href="#"  class="mybtn btn-lg btn-primary" data-toggle="modal" data-target="#myModal2">New Teacher <span class="fa fa-user-plus" style="display:flex;float:right"></button>
+            </li>
+            <li class="nav-item">
+            <button type="button" href="#"  class="mybtn btn-lg btn-primary" data-toggle="modal" data-target="#myModal3">Admins <span class="fa fa-group" style="display:flex;float:right"></button>
+            </li>
+            <li class="nav-item">
+            <button type="button"   class="mybtn btn-lg btn-primary" > <a style="text-decoration:none; color:white" href="{{ route('index') }}">Log Out</a> <span class="fa fa-user-plus" style="display:flex;float:right"></button>
+            </li>
+          </ul>
+           
+        </nav>
 
     
-   <div class="container">
-        <main role="main" class="col-sm-12 ml-sm-auto col-md-12 pt-3">
-          <h1 class="headerAdmin">Admin</h1>
-
-  <div class="col-sm-12 blog-main">
+   <br><br><br>
+    
+  
+<main role="main" class="col-sm-12 ml-sm-auto col-md-10 pt-3">
 <div class="row">
-<div class="col-md-6 blog-post">
-<h2 class="headerAdmin">Registreations</h2>
-<form action="{{ route('register') }}" method="post">
-  @csrf
- <div class="form-group">
-  <label class="tcolor" for="Name">User Name</label>
-  <input class="form-control" type="text" name="name" required>
- </div>
-    <br>
- <div class="form-group">
-  <label class="tcolor" for="Email">Email</label>
-  <input class="form-control" type="text" name="email" required>
- </div>
-    <br>  
- <div class="form-group">
-   <label class="tcolor" for="password">Password</label>
-   <input class="form-control" type="text" name="password" required>
- </div>
- <br>
- <div class="form-group">
-   <label class="tcolor" for="password">Role</label>
-   <input class="form-control" type="text" name="role" required>
- </div>
-    <br>   
- <div class="form-group">
-   <input class="btn btn-primary btn-block mybtn" type="submit" value="Submit">
- </div>
-   
- </form>
+<div class="col-md-12 blog-post">
+<section>
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header tcolor" style="background-color: black">
+                        <h5 class="modal-title" id="myModalTitle">Edit:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body myModal tcolor">
+                                        <!--Modal content-->
+                        <form action="{{ route('register') }}" method="POST">     
+                        {{ csrf_field() }}
+                        {{ method_field('POST') }}
+     
+
+                            <div class="form-group">
+                                <label for="exampleInputName1">Name</label>
+                                <input type="text" class="form-control" name="name" placeholder="Enter Name" required value="">
+                                <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">We'll never share your todo name with anyone else.</small>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="exampleInputName1">Email</label>
+                                <input type="text" class="form-control" name="email" placeholder="Enter Name" required value="">
+                                <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">We'll never share your todo name with anyone else.</small>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Password</label>
+                                <input type="password" class="form-control" name="password" placeholder="Enter Name" required value="">
+                                <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">We'll never share your todo name with anyone else.</small>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Role</label>
+                                <input type="text" class="form-control" name="role" placeholder="Enter Name" required value="">
+                                <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">We'll never share your todo name with anyone else.</small>
+                            </div>
+                            <br>
 
 
- 
-</div><!-- /.blog-post -->
+                            <button type="submit" id="editbtn" class="btn btn-primary btn-sm">Submit</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" style="display:flex; float:right">Close</button>
+                                       
+                        </form>                                        
+                                         
+                                       
+                    </div>
+                    <div class="modal-footer" style="background-color: black">
+                                        
+                    </div>
+                </div>
+            </div>
+  
 
-          </section>
- <div class="col-md-6">
-          <h2 class="headerAdmin">School Timetable</h2>
+
+</section>
+
+
+
+<section>
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModal-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header tcolor" style="background-color: black">
+                        <h5 class="modal-title" id="myModalTitle">Edit:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body myModal tcolor">
+                                        <!--Modal content-->
+                                        <h2 class="header">Admins</h2>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
+                  <th>S/N</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Role</th>
+                
                 </tr>
               </thead>
               <tbody>
+                @foreach($user as $user)
                 <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
+                <td>{{$loop->index +1}}</td>
+                  <td style="color:Tomato">{{$user->name }}</td>
+                  <td style="color:Tomato">{{$user->email }}</td>
+                  <td style="color:Tomato">{{$user->role }}</td>
                 </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
-                </tr>
-                <tr>
-                  <td>1,004</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                </tr>
+               @endforeach
                
-                
                
               </tbody>
             </table>
+       
+                                       
+                    </div>
+                    <div class="modal-footer" style="background-color: black">
+                                        
+                    </div>
+                </div>
+            </div>
+  
+
+
+</section>
+
+
+
+
+
+
+ 
+
+  
+  
+ 
+
+<section>
+<main role="main" class="container">
+<h2 class="good">Harrow Schools</h2>       
+</main>
+</section>
+
+<hr>
+ 
+</div><!-- /.blog-post -->
+
+ </section>
+ 
+ <section>
+ 
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="con">
+            <div class="row">
+          <div class="col-md-12 post">
+            <p style="display:flex; float:right"><span class="fa fa-envelope-open font2"></span></p>
+            <h2 style="color:tomato">School Managment</h2><br>
+            <hr>
+            <p> Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            Donec sed odio dui. Cras justo odio, dapibus ac
+            <hr>
+            <p><a class="btn btn-secondary mybtn"  href="index.html#" role="button"><span class="fa fa-pencil-square-o"> Update Post</span> &raquo;</a></p>
           </div>
-        </main>
-      </div>
-    </div>
-    </div>
-    </div>
-    </div>
+         
+          </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="con">
+            <div class="row">
+          <div class="col-md-6 post">
+          <p style="display:flex; float:right"><span class="fa fa-envelope-open font2"></span></p>
+            <h2 style="color:tomato">Projects</h2><br>
+            <hr>
+            <p> Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <hr>
+            <p><a class="btn btn-secondary mybtn"  href="index.html#" role="button"><span class="fa fa-pencil-square-o"> Update Post</span> &raquo;</a></p>
+          </div>
+          <div class="col-md-6 post">
+          <p style="display:flex; float:right"><span class="fa fa-envelope-open font2"></span></p>
+            <h2 style="color:tomato">School fees</h2><br>
+            <hr>
+            <p> Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <hr>
+            <p><a class="btn btn-secondary mybtn"  href="index.html#" role="button"><span class="fa fa-pencil-square-o"> Update Post</span> &raquo;</a></p>
+          </div>
+          </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="con">
+            <div class="row">
+          <div class="col-md-6 post">
+          <p style="display:flex; float:right"><span class="fa fa-envelope-open font2"></span></p>
+            <h2 style="color:tomato">Student info</h2><br>
+            <hr>
+            <p> Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <hr>
+            <p><a class="btn btn-secondary mybtn"  href="index.html#" role="button"><span class="fa fa-pencil-square-o"> Update Post</span> &raquo;</a></p>
+          </div>
+          <div class="col-md-6 post">
+          <p style="display:flex; float:right"><span class="fa fa-envelope-open font2"></span></p>
+            <h2 style="color:tomato">Exams</h2><br>
+            <hr>
+            <p> Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <hr>
+            <p><a class="btn btn-secondary mybtn"  href="index.html#" role="button"><span class="fa fa-pencil-square-o"> Update Post</span> &raquo;</a></p>
+          </div>
+          </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="con">
+            <div class="row">
+          <div class="col-md-6 post" >
+          <p style="display:flex; float:right"><span class="fa fa-envelope-open font2"></span></p>
+            <h2 style="color:tomato">Health</h2><br>
+            <hr>
+            <p> Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <hr>
+            <p><a class="btn btn-secondary mybtn"  href="index.html#" role="button"><span class="fa fa-pencil-square-o"> Update Post</span> &raquo;</a></p>
+          </div>
+          <div class="col-md-6 post">
+          <p style="display:flex; float:right"><span class="fa fa-envelope-open font2"></span></p>
+            <h2 style="color:tomato">Contacts</h2><br>
+            <hr>
+            <p> Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <hr>
+            <p><a class="btn btn-secondary mybtn"  href="index.html#" role="button"><span class="fa fa-pencil-square-o"> Update Post</span> &raquo;</a></p>
+          </div>
+          </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="con">
+          <div class="col-md-12 post">
+          <p style="display:flex; float:right"><span class="fa fa-envelope-open font2"></span></p>
+            <h2 style="color:tomato">Mission</h2><br>
+            <hr>
+            <p> Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac
+            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <hr>
+            <p><a class="btn btn-secondary mybtn"  href="index.html#" role="button"><span class="fa fa-pencil-square-o"> Update Post</span> &raquo;</a></p>
+          </div>
+          </div>
+        </div>
+
+        <hr>
+
+    
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a class="mybtn" href="#">Back to top</a></p>
+        <p style="color:white">&copy; 2020 Company, Inc.</p>
+      </footer>
+
+      </div> <!-- /container -->
+  
+ 
+ </section>
    @endsection

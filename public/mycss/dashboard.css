@@ -5,7 +5,39 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
     padding-top: 3.5rem;
+     background-color: rgba(228, 227, 227, 0.973);
+     background:linear-gradient(   rgba(255, 255, 255, 0.726),rgba(241, 245, 245, 0.9), white); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
   }
+
+  .row{
+    margin: 0;
+    padding: 0;
+  }
+
+  .button0{
+    background-color:  rgb(4, 22, 78) !important;
+    box-shadow: 5px 5px 7px rgba(8, 30, 95, 0.9);
+    border: none !important;
+    font-size: 1rem;
+    color: white;
+    padding: 10px 16px  !important;
+    transition: all .6s;
+
+}
+.button0:hover{
+    background-color:rgb(19, 68, 218)  !important;
+    color: white;
+    text-decoration: none;
+    border-left: 5px solid rgb(23, 3, 70);
+    font-size: 1rem !important;
+    transform: translateY(-1px)  !important;
+}
+
+
   
   /*
    * Typography
@@ -17,6 +49,19 @@ body {
     border-bottom: 1px solid #eee;
   }
   
+  .con{
+    background-color: white;
+  }
+
+
+
+  /* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+
+
   /*
    * Sidebar
    */
@@ -65,7 +110,8 @@ body {
   
   .navbar {
     margin-bottom: 20px;
-    background-color: rgb(138, 135, 135) !important;
+    padding: 10px;
+    background-color: rgb(31, 29, 29) !important;
   }
 
   .header{
@@ -86,4 +132,75 @@ body {
 
 .lnk:active{
     color: blue!important;
+}
+
+.mybtn{
+  margin: 10px;
+  width: 180px;
+  background-color:  rgb(4, 22, 78) !important;
+    box-shadow: 5px 5px 7px rgba(8, 30, 95, 0.9);
+    border: none !important;
+    font-size: 1rem;
+    color: white;
+    padding: 10px 16px  !important;
+    transition: all .6s;
+    text-decoration: none;
+}
+
+.font{
+  background-color:  rgb(4, 22, 78) !important;
+    box-shadow: 5px 5px 7px rgba(8, 30, 95, 0.9);
+    border: none !important;
+    font-size: 1rem;
+    color: white;
+    padding: 10px 16px  !important;
+    transition: all .6s;
+    text-decoration: none;
+    font-size: 100px;
+}
+
+.font2{
+  background-color:  rgb(4, 224, 77) !important;
+    border: none !important;
+    font-size: 1rem;
+    color: white;
+    padding: 10px 16px  !important;
+    transition: all .6s;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.link{
+  background-color:  rgb(4, 22, 78) !important;
+    box-shadow: 5px 5px 7px rgba(8, 30, 95, 0.9);
+    border: none !important;
+    font-size: 1rem;
+    color: white;
+    padding: 10px 16px  !important;
+    transition: all .6s;
+    text-decoration: none;
+}
+
+.post{
+  
+  box-shadow: 5px 5px 7px rgba(8, 30, 95, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+}
+.mybtn:hover{
+  background-color:rgb(19, 68, 218)  !important;
+  color: white;
+  text-decoration: none;
+  border-left: 5px solid rgb(23, 3, 70);
+  font-size: 1rem !important;
+  transform: translateY(-1px)  !important;
+}
+
+.good{
+  margin-top: 2rem !important;
+  font-size: 3.9em !important;
+  font-weight: normal !important;
+  font-family: elephant;
+  color: rgb(23, 3, 70);
+  /* color: rgb(224, 250, 153); */
 }
