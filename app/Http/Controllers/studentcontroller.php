@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\User;
 use function redirect;
-use Hash;
+// use Hash;
 
 class StudentController extends Controller
 { 
