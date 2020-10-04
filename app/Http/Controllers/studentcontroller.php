@@ -10,7 +10,7 @@ use App\Models\User;
 use function redirect;
 use Hash;
 
-class studentcontroller extends Controller
+class StudentController extends Controller
 { 
 
             public function index(){
