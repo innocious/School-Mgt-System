@@ -22,10 +22,11 @@
                             </div>
                         </nav>
                     
-                                            <!-- end of nav bar -->
+                        <!-- end of nav bar -->
+                        
                         <div>
                             <h2 class="good">Harrow Schools</h2>
-                            <h6 class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente provident corrupti obcaecati quaerat quae blanditiis iure</h6>
+                            <h6 class="small ml-2">Expanding knowledge to its full potentials</h6>
                             <div class="watch mb-5">
                                 <br><br>
                             </div>
@@ -82,9 +83,9 @@
         <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal-label" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <div class="modal-header tcolor" style="background-color: black">
-                        <h5 class="modal-title" id="myModalTitle">Edit:</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <div class="modal-header tcolor" style="background-color: rgb(33, 33, 104)">
+                        <h5 class="modal-title text-white" id="myModalTitle">Sign in</h5>
+                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -95,30 +96,30 @@
                         {{ csrf_field() }}
                         {{ method_field('GET') }}
      
-                            <div class="form-group">
+                            <div class="form-group" id="adminEmail">
                                 <label for="exampleInputName1">Email</label>
-                                <input type="text" class="form-control" name="email" placeholder="Enter Name" required value="">
-                                <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">We'll never share your todo name with anyone else.</small>
+                                <input type="text" class="form-control" name="email" placeholder="Enter Email ID" required value="">
+                                {{-- <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">We'll never share your todo name with anyone else.</small> --}}
                             </div>
                             <br>
 
-                            <div class="form-group">
+                            <div class="form-group" id="adminPassword">
                                 <label for="exampleInputEmail1">Password</label>
-                                <input type="password" class="form-control" name="password" placeholder="Enter Name" required value="">
-                                <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">We'll never share your todo name with anyone else.</small>
+                                <input type="password" class="form-control" name="password" placeholder="Enter Password" required value="">
+                                <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">Your password is safe with me</small>
                             </div>
                             <br>
 
             
 
-                            <button type="submit" id="editbtn" class="btn btn-primary btn-sm">Submit</button>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal" style="display:flex; float:right">Close</button>
+                            <button type="submit" id="editbtn" class="btn btn-success">Submit</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" style="display:flex; float:right">Close</button>
                                        
                         </form>                                        
                                          
                                        
                     </div>
-                    <div class="modal-footer" style="background-color: black">
+                    <div class="modal-footer" style="background-color: rgb(33, 33, 104)">
                                         
                     </div>
                 </div>
