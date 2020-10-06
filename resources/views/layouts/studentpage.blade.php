@@ -17,9 +17,8 @@
 
 <body>
     <div class="container-fluid">
-    @yield('content')
-    </div>
-       
+        @yield('content')
+    </div>       
     <script src="{{URL::asset('js/bootstrap.bundle.min.js')}}"></script>
 </body>
 

@@ -15,7 +15,7 @@ use App\Http\Controllers\studentcontroller;
 
 Route::get ( '/',[studentcontroller::class,'index'])->name('index');
 Route::get ( '/admin',[studentcontroller::class,'admin'])->name('admin');
-Route::post ( '/register', [studentcontroller::class,'register'])->name('register');
+Route::get ( '/register', [studentcontroller::class,'register'])->name('register');
 Route::get ( '/authenticate',[studentcontroller::class,'authenticate'] )->name('authenticate');
 Route::get ( '/logout',[studentcontroller::class,'logout'])->name('logout');
 Route::get ( '/ChangePassword',[studentcontroller::class,'ChangePassword'])->name('ChangePassword');
