@@ -22,3 +22,26 @@ Route::get ( '/ChangePassword',[studentcontroller::class,'ChangePassword'])->nam
 Route::get ( '/updatePasswordpage',[studentcontroller::class,'updatePasswordpage'])->name('updatePasswordpage');
 
 
+// Route::get('/', function () {
+//     return view('about');
+// });
+
+// Route::get('/', function () {
+//     return view('students');
+// });
+
+// Route::get('/', function () {
+//     return view('registerstudents');
+// });
+
+
+
+
+
+// Route::get('/', function () {
+//     return view('landing');
+// });
+
+// Route::get('/', function () {
+//     return view('homepage');
+// });
