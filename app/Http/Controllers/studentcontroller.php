@@ -14,7 +14,6 @@ class StudentController extends Controller
 { 
 
     public function index(Request $request){        
-       return view("registration");
         
     }
 

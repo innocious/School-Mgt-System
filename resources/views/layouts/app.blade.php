@@ -20,8 +20,8 @@
     <div class="container">
         @yield('content')
     </div>
-    <div class="container">
-        @yield('reg-content') 
+    <div class="container">        
+        @yield('reg-content')         
     </div>
 
     <script src="{{URL::asset('js/bootstrap.bundle.min.js')}}"></script>

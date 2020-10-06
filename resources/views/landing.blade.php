@@ -1,4 +1,4 @@
-@extends('layout.landing-layout')
+@extends('layouts.landing-layout')
   @section('content')
     <section>
         <!-- the hero section -->
@@ -22,18 +22,18 @@
                         </div>
                     </nav>
 
-                    $user = User::where('email', '=', $request->input('email')->first());
-                    @if ($user === null)
-                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                    {{-- $user = User::where('email', '=', $request->input('email')->first());
+                    @if ($user === null) --}}
+                    {{-- <div class="alert alert-primary alert-dismissible fade show" role="alert">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             <span class="sr-only">Close</span>
                         </button>
                         <strong>Holy guacamole!</strong> Hold on asec!!! There is no admin. Please register one.
-                    </div>    
-                    @else
+                    </div>     --}}
+                    {{-- @else --}}
                         
-                    @endif
+                    {{-- @endif --}}
                     
                 
                     <!-- end of nav bar -->
@@ -107,19 +107,19 @@
                     <div class="modal-body myModal tcolor">
                                         <!--Modal content-->
                         <form action="{{ route('authenticate') }}" method="POST">     
-                        {{ csrf_field() }}
+                        @csrf
                         {{ method_field('GET') }}
      
                             <div class="form-group" id="adminEmail">
                                 <label for="exampleInputName1">Email</label>
-                                <input type="text" class="form-control" name="email" placeholder="Enter Email ID" required value="">
+                                <input type="text" class="form-control" name="admin_email" placeholder="Enter Email ID" required value="test@example.com">
                                 {{-- <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">We'll never share your todo name with anyone else.</small> --}}
                             </div>
                             <br>
 
                             <div class="form-group" id="adminPassword">
                                 <label for="exampleInputEmail1">Password</label>
-                                <input type="password" class="form-control" name="password" placeholder="Enter Password" required value="">
+                                <input type="password" class="form-control" name="password" placeholder="Enter Password" required value="password">
                                 <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">Your password is safe with me</small>
                             </div>
                             <br>

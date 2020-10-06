@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\studentcontroller;
+use App\Http\Controllers\SchoolManagmentController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,12 +14,12 @@ use App\Http\Controllers\studentcontroller;
 |
 */
 
-Route::get ( '/',[studentcontroller::class,'index'])->name('index');
-Route::get ( '/admin',[studentcontroller::class,'admin'])->name('admin');
-Route::get ( '/register', [studentcontroller::class,'register'])->name('register');
-Route::get ( '/authenticate',[studentcontroller::class,'authenticate'] )->name('authenticate');
-Route::get ( '/logout',[studentcontroller::class,'logout'])->name('logout');
-Route::get ( '/ChangePassword',[studentcontroller::class,'ChangePassword'])->name('ChangePassword');
-Route::get ( '/updatePasswordpage',[studentcontroller::class,'updatePasswordpage'])->name('updatePasswordpage');
+Route::get ( '/',[SchoolManagmentController::class,'index'])->name('index');
+Route::get ( '/admin',[SchoolManagmentController::class,'admin'])->name('admin');
+Route::get ( '/register', [SchoolManagmentController::class,'register'])->name('register');
+Route::get ( '/authenticate',[SchoolManagmentController::class,'authenticate'] )->name('authenticate');
+Route::get ( '/logout',[SchoolManagmentController::class,'logout'])->name('logout');
+Route::get ( '/ChangePassword',[SchoolManagmentController::class,'ChangePassword'])->name('ChangePassword');
+Route::get ( '/updatePasswordpage',[SchoolManagmentController::class,'updatePasswordpage'])->name('updatePasswordpage');
 
 

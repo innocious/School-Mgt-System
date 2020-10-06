@@ -156,12 +156,12 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach($user as $user)
+                @foreach($user as $users)
                 <tr>
                 <td>{{$loop->index +1}}</td>
-                  <td style="color:Tomato">{{$user->name }}</td>
-                  <td style="color:Tomato">{{$user->email }}</td>
-                  <td style="color:Tomato">{{$user->role }}</td>
+                  <td style="color:Tomato">{{$users->name }}</td>
+                  <td style="color:Tomato">{{$users->email }}</td>
+                  <td style="color:Tomato">{{$users->role }}</td>
                 </tr>
                @endforeach
                
