@@ -4,7 +4,8 @@
  
 
  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="index.html#">Dashboard</a>
+   <span><img src="" alt=""></span>
+        <a class="navbar-brand" href="index.html#">Admin Dashboard</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,7 +40,7 @@
             <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-            <button type="button" href="#"  class="mybtn btn-lg btn-danger" data-toggle="modal" data-target="#myModal2">New Admin... <span class="fa fa-gears" style="display:flex;float:right"></span></button>
+            <button type="button" href="#"  class="mybtn btn-lg btn-danger" data-toggle="modal" data-target="#myModal2">New Admin <span class="fa fa-gears" style="display:flex;float:right"></span></button>
             </li>
             <li class="nav-item">
             <button type="button" href="#"  class="mybtn btn-lg btn-success" data-toggle="modal" data-target="#myModal2">New Student <span class="fa fa-user-plus" style="display:flex;float:right"></span></button>
@@ -63,8 +64,9 @@
   
 <main role="main" class="col-sm-12 ml-sm-auto col-md-10 pt-3">
 <div class="row">
-<div class="col-md-12 blog-post">
-<section>
+<div class="col-md-12">
+
+  <section>
 <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal-label" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
