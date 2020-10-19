@@ -13,41 +13,41 @@ use function redirect;
 class StudentController extends Controller
 { 
 
-            public function index(){
-            return view('landing');  
-            }
+    public function index(Request $request){        
+        
+    }
 
             
-            public function admin(){
-                return redirect::back();
-            }
+    public function admin(){
+        return redirect::back();
+    }
 
-                    public function register(Request $request) {
-                        $request->validate([
-                        'name'=>'required',
-                        'email'=>'required',
-                        'password'=>'required',
-                        ]);
-                    
-                
-                    try {
-                        $user = new User();
-                        $user->name = $request->get( 'name' );
-                        $user->email = $request->get( 'email' );
-                        $user->password = Hash::make ( $request->get ( 'password' ) );
-                        $user->role = $request->get( 'role' );
-                        $user->user_role = "1";
-                        $user->save();
-                    
-                          return view( 'registrationSuccess' );
-                        }
-                        catch (\Exception $e) { // It's actually a QueryException but this works too
-                            if ($e->getCode() == 23000) {
-                                // Deal with duplicate key error 
-                                return view('regFail'); 
-                            }
-                        }
-                    }
+    public function register(Request $request) {
+        $request->validate([
+        'name'=>'required',
+        'email'=>'required',
+        'password'=>'required',
+        ]);
+    
+
+        try {
+            $user = new User();
+            $user->name = $request->get( 'name' );
+            $user->email = $request->get( 'email' );
+            $user->password = Hash::make ( $request->get ( 'password' ) );
+            $user->role = $request->get( 'role' );
+            $user->user_role = "1";
+            $user->save();
+    
+            return view( 'registrationSuccess' );
+        }
+        catch (\Exception $e) { // It's actually a QueryException but this works too
+            if ($e->getCode() == 23000) {
+                // Deal with duplicate key error 
+                return view('regFail'); 
+            }
+        }
+    }
                 
                 
        /**
@@ -83,8 +83,7 @@ class StudentController extends Controller
                         $user = User::select()->where("email","LIKE","$request->email","AND", "role","LIKE","Teacher" )->get();
                         return view('main.studentView', compact('user'));
                     }
-                    else{
-                        
+                    else{                        
                             echo "something just went wrong";
                     }
                 } 
@@ -96,8 +95,8 @@ class StudentController extends Controller
     }  
 
     ///////////////////////////////////////////////////////////////////////////////////////
-        public function logout() {
-       
+    public function logout() {
+    
         Auth::logout();
         return redirect('/');
     }

@@ -14,12 +14,8 @@
     <!-- Latest compiled and minified CSS -->
 </head>
 
-<body>
-    
-        @yield('content')
-    
-
-    <script src="{{URL::asset('js/bootstrap.bundle.min.js')}}"></script>
+<body>    
+     @yield('content')  
+<script src="{{URL::asset('js/bootstrap.bundle.min.js')}}"></script>
 </body>
-
 </html>

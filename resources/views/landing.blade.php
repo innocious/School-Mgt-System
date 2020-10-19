@@ -1,39 +1,53 @@
-@extends('land')
+@extends('layouts.landing-layout')
   @section('content')
-<section>
-                    <!-- the hero section -->
+    <section>
+        <!-- the hero section -->
         <div class="container-fluid">
             <div class="image">
-                    <!--the navbar  -->
-                    <div class="container pb-2 " id="cont" >
-                    <br>
-                        <nav class="navbar navbar-expand-lg  navbar-light">
-                        <a class="navbar-brand" href="#"></a>
-                            <button class="navbar-toggler ml-auto" type="button"  data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup ml-auto">
-                            <br>
-                                <div class="navbar-nav ml-5 ml-auto">
-                                    <a class="nav-link active ml-3" id="menu" href="#">Home<span class="sr-only">(current)</span></a>
-                                    <a class="nav-link ml-3" href="#"></a>
-                                    <a class="nav-link ml-3" href="#"></a>
-                                </div>
-                            </div>
-                        </nav>
-                    
-                        <!-- end of nav bar -->
-                        
-                        <div>
-                            <h2 class="good">Harrow Schools</h2>
-                            <h6 class="small ml-2">Expanding knowledge to its full potentials</h6>
-                            <div class="watch mb-5">
-                                <br><br>
+                <!--the navbar  -->
+                <div class="container pb-2 " id="cont" >
+                <br>
+                    <nav class="navbar navbar-expand-lg  navbar-light">
+                    <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler ml-auto" type="button"  data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup ml-auto">
+                        <br>
+                            <div class="navbar-nav ml-5 ml-auto">
+                                <a class="nav-link active ml-3" id="menu" href="#">Home<span class="sr-only">(current)</span></a>
+                                <a class="nav-link ml-3" href="#"></a>
+                                <a class="nav-link ml-3" href="#"></a>
                             </div>
                         </div>
-                    </div>
+                    </nav>
+
+                    {{-- $user = User::where('email', '=', $request->input('email')->first());
+                    @if ($user === null) --}}
+                    {{-- <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <strong>Holy guacamole!</strong> Hold on asec!!! There is no admin. Please register one.
+                    </div>     --}}
+                    {{-- @else --}}
+                        
+                    {{-- @endif --}}
                     
-                    <!-- end of hero section -->
+                
+                    <!-- end of nav bar -->
+                    
+                    <div>
+                        <h2 class="good">Harrow Schools</h2>
+                        <h6 class="small ml-2">Expanding knowledge to its full potentials</h6>
+                        <div class="watch mb-5">
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- end of hero section -->
             </div>
         </div>
     </section>
@@ -93,19 +107,19 @@
                     <div class="modal-body myModal tcolor">
                                         <!--Modal content-->
                         <form action="{{ route('authenticate') }}" method="POST">     
-                        {{ csrf_field() }}
+                        @csrf
                         {{ method_field('GET') }}
      
                             <div class="form-group" id="adminEmail">
                                 <label for="exampleInputName1">Email</label>
-                                <input type="text" class="form-control" name="email" placeholder="Enter Email ID" required value="">
+                                <input type="text" class="form-control" name="admin_email" placeholder="Enter Email ID" required value="test@example.com">
                                 {{-- <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">We'll never share your todo name with anyone else.</small> --}}
                             </div>
                             <br>
 
                             <div class="form-group" id="adminPassword">
                                 <label for="exampleInputEmail1">Password</label>
-                                <input type="password" class="form-control" name="password" placeholder="Enter Password" required value="">
+                                <input type="password" class="form-control" name="password" placeholder="Enter Password" required value="password">
                                 <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">Your password is safe with me</small>
                             </div>
                             <br>

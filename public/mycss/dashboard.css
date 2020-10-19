@@ -13,12 +13,12 @@ body {
     
   }
 
-  .row{
+  /* .row{
     margin: 0;
     padding: 0;
-  }
+  } */
 
-  .button0{
+  /* .button0{
     background-color:  rgb(4, 22, 78) !important;
     box-shadow: 5px 5px 7px rgba(8, 30, 95, 0.9);
     border: none !important;
@@ -27,7 +27,7 @@ body {
     padding: 10px 16px  !important;
     transition: all .6s;
 
-}
+} */
 .button0:hover{
     background-color:rgb(19, 68, 218)  !important;
     color: white;
@@ -35,7 +35,7 @@ body {
     border-left: 5px solid rgb(23, 3, 70);
     font-size: 1rem !important;
     transform: translateY(-1px)  !important;
-}
+} */
 
 
   
@@ -43,7 +43,7 @@ body {
    * Typography
    */
   
-  h1 {
+  /* h1 {
     padding-bottom: 9px;
     margin-bottom: 20px;
     border-bottom: 1px solid #eee;
@@ -51,7 +51,7 @@ body {
   
   .con{
     background-color: white;
-  }
+  } */
 
 
 
@@ -66,7 +66,7 @@ body {
    * Sidebar
    */
   
-  .sidebar {
+  /* .sidebar {
     position: fixed;
     top: 51px;
     bottom: 0;
@@ -74,7 +74,7 @@ body {
     z-index: 1000;
     padding: 20px 0;
     overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    overflow-y: auto;
     border-right: 1px solid #eee;
   }
   
@@ -92,49 +92,49 @@ body {
   
   .sidebar .nav-link {
     border-radius: 0;
-  }
+  } */
   
   /*
    * Dashboard
    */
   
-  /* Placeholders */
+  /* Placeholders
   .placeholders {
     padding-bottom: 3rem;
-  }
+  } */
   
-  .placeholder img {
+  /* .placeholder img {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
+  } */
   
-  .navbar {
+  /* .navbar {
     margin-bottom: 20px;
     padding: 10px;
     background-color: rgb(31, 29, 29) !important;
-  }
+  } */
 
-  .header{
+  /* .header{
       color: rgb(0, 140, 255) !important;
-  }
+  } */
 
-  .headerAdmin{
+  /* .headerAdmin{
       color: crimson;
-  }
+  } */
 
-.nav-item{
+/* .nav-item{
     color: blueviolet !important;
-}  
+}   */
 
-.lnk{
+/* .lnk{
     color:whitesmoke !important;
-}
+} */
 
-.lnk:active{
+/* .lnk:active{
     color: blue!important;
-}
+} */
 
-.mybtn{
+/* .mybtn{
   margin: 10px;
   width: 180px;
   background-color:  rgb(4, 22, 78) !important;
@@ -145,9 +145,9 @@ body {
     padding: 10px 16px  !important;
     transition: all .6s;
     text-decoration: none;
-}
+} */
 
-.font{
+/* .font{
   background-color:  rgb(4, 22, 78) !important;
     box-shadow: 5px 5px 7px rgba(8, 30, 95, 0.9);
     border: none !important;
@@ -157,9 +157,9 @@ body {
     transition: all .6s;
     text-decoration: none;
     font-size: 100px;
-}
+} */
 
-.font2{
+/* .font2{
   background-color:  rgb(4, 224, 77) !important;
     border: none !important;
     font-size: 1rem;
@@ -168,9 +168,9 @@ body {
     transition: all .6s;
     text-decoration: none;
     font-size: 30px;
-}
+} */
 
-.link{
+/* .link{
   background-color:  rgb(4, 22, 78) !important;
     box-shadow: 5px 5px 7px rgba(8, 30, 95, 0.9);
     border: none !important;
@@ -179,28 +179,28 @@ body {
     padding: 10px 16px  !important;
     transition: all .6s;
     text-decoration: none;
-}
+} */
 
-.post{
+/* .post{
   
   box-shadow: 5px 5px 7px rgba(8, 30, 95, 0.9);
   padding: 15px;
   border-radius: 10px;
-}
-.mybtn:hover{
+} */
+/* .mybtn:hover{
   background-color:rgb(19, 68, 218)  !important;
   color: white;
   text-decoration: none;
   border-left: 5px solid rgb(23, 3, 70);
   font-size: 1rem !important;
   transform: translateY(-1px)  !important;
-}
+} */
 
-.good{
+/* .good{
   margin-top: 2rem !important;
   font-size: 3.9em !important;
   font-weight: normal !important;
   font-family: elephant;
   color: rgb(23, 3, 70);
-  /* color: rgb(224, 250, 153); */
-}
+  color: rgb(224, 250, 153);
+} */
