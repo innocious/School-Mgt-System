@@ -20,10 +20,10 @@ class CreateTeachersTable extends Migration
             $table->string('gender');
             $table->string('email');
             $table->integer('age');
-            $table->integer('phone_number');
-            $table->string('password');
+            $table->integer('phone_number');            
             $table->string('state_of_origin');            
-            $table->string('Nationality')
+            $table->string('nationality');
+            $table->string('image')->default(false);
             $table->timestamps();
         });
     }

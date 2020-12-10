@@ -112,14 +112,14 @@
      
                             <div class="form-group" id="adminEmail">
                                 <label for="exampleInputName1">Email</label>
-                                <input type="text" class="form-control" name="admin_email" placeholder="Enter Email ID" required value="test@example.com">
+                                <input type="text" class="form-control" name="admin_email" placeholder="Enter Email ID">
                                 {{-- <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">We'll never share your todo name with anyone else.</small> --}}
                             </div>
                             <br>
 
                             <div class="form-group" id="adminPassword">
                                 <label for="exampleInputEmail1">Password</label>
-                                <input type="password" class="form-control" name="password" placeholder="Enter Password" required value="password">
+                                <input type="password" class="form-control" name="password" placeholder="Enter Password">
                                 <small id="emailHelp" class="form-text" style="color: rgb(228, 228, 224);">Your password is safe with me</small>
                             </div>
                             <br>
